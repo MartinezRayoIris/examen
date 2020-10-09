@@ -1,0 +1,53 @@
+package examen;
+
+import java.util.Scanner;
+
+
+public class Examen {
+   // Examen l = new Examen();
+Exa me= new Exa();
+Scanner n= new Scanner(System.in);
+
+public void menu(){
+   me.datos();
+    int j=0,r,k;
+    do{
+       
+    System.out.println("Que desea realizar?");
+System.out.println("1.Suma");
+System.out.println("2.Resta");
+System.out.println("3.Multiplicacion");
+System.out.println("4.Salir");
+    r=n.nextInt();
+switch(k=r){
+    case 1:
+        me.suma();
+        j=1;
+        break;
+    case 2:
+        me.resta();
+        j=1;
+        break;
+    case 3:
+        me.multiplicacion();
+        j=1;
+        break;
+    case 4: 
+        me.salir();
+        j=1;
+        break;
+    default:
+        System.out.println("Esa opcion no existe");
+        j=1;
+    }
+    }while(j==1);
+
+
+}
+    public static void main(String[] args) {
+    Examen l = new Examen();
+   // l.datos();
+        l.menu();    // TODO code application logic here
+    }
+    
+}
