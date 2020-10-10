@@ -22,14 +22,20 @@ public class Exa {
     n1=n.nextInt();
     n2=n.nextInt();
     n3=n.nextInt();
-    r=num.get(n1)+num.get(n2)+num.get(n3);
+    nn1=n1-1;
+    nn2=n2-1;
+    nn3=n3-1;
+    r=num.get(nn1)+num.get(nn2)+num.get(nn3);
     System.out.println("Su resultado es"+r);
     }
     public void resta(){
     System.out.println("Que posiciones desea restar?(Solo se permiten 2");
     n1=n.nextInt();
     n2=n.nextInt();
-    r=num.get(n1)-num.get(n2);
+    nn1=n1-1;
+    nn2=n2-1;
+    ;
+    r=num.get(nn1)-num.get(nn2);
     System.out.println("Su resultado es"+r);
     }
     public void multiplicacion(){
@@ -37,7 +43,10 @@ public class Exa {
     n1=n.nextInt();
     n2=n.nextInt();
     n3=n.nextInt();
-    r=num.get(n1)*num.get(n2)*num.get(n3);
+    nn1=n1-1;
+    nn2=n2-1;
+    nn3=n3-1;
+    r=num.get(nn1)*num.get(nn2)*num.get(nn3);
     System.out.println("Su resultado es"+r);
     }
     public void salir(){
